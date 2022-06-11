@@ -1,0 +1,40 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Emp_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Emp_Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Gender",
+				"type": "varchar"
+			},
+			{
+				"name": "Country",
+				"type": "varchar"
+			},
+			{
+				"name": "Salary",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Employee"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
